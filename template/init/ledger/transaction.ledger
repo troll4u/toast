@@ -1,0 +1,27 @@
+2016/12/12 * initialize Guild
+    ; Create XGG as a Liability
+    ; Then create XP by giving the XGG as Income
+    Assets:<<< user_name >>>:init                 1 XGG
+    Expenses:<<< user_name >>>:init                1 XGG
+    Income:<<< user_name >>>:init                  -1 XGG
+    Liabilities:<<< user_name >>>:init            -1 XGG
+    ; vote for own accounts
+    Assets:<<< user_name >>>:init:<<< user_name >>>          1 XP
+    Expenses:<<< user_name >>>:init:<<< user_name >>>          1 XP
+    Income:<<< user_name >>>:init:<<< user_name >>>          1 XP
+    Liabilities:<<< user_name >>>:init:<<< user_name >>>          1 XP
+    ; count votes
+    Equity:<<< user_name >>>:init:<<< user_name >>>:Assets      -1 XP
+    Equity:<<< user_name >>>:init:<<< user_name >>>:Expenses     -1 XP
+    Equity:<<< user_name >>>:init:<<< user_name >>>:Income      -1 XP
+    Equity:<<< user_name >>>:init:<<< user_name >>>:Liabilities  -1 XP
+    ; also register the founder
+    Assets:<<< user_name >>>:register:<<< user_name >>>         -0.01 XP
+    Expenses:<<< user_name >>>:register:<<< user_name >>>       -0.01 XP
+    Income:<<< user_name >>>:register:<<< user_name >>>         -0.01 XP
+    Liabilities:<<< user_name >>>:register:<<< user_name >>>    -0.01 XP
+    ; count founder registration votes
+    Equity:<<< user_name >>>:register:<<< user_name >>>:Assets      0.01 XP
+    Equity:<<< user_name >>>:register:<<< user_name >>>:Expenses     0.01 XP
+    Equity:<<< user_name >>>:register:<<< user_name >>>:Income      0.01 XP
+    Equity:<<< user_name >>>:register:<<< user_name >>>:Liabilities  0.01 XP
