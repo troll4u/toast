@@ -53,3 +53,7 @@ account Assets:isysd:register
 account Income:isysd:register
 account Liabilities:isysd:register
 account Expenses:isysd:register
+account Assets:troll4u:register
+account Income:troll4u:register
+account Liabilities:troll4u:register
+account Expenses:troll4u:register

@@ -1,27 +1,10 @@
-2016/12/12 * initialize Guild
-    ; Create XGG as a Liability
-    ; Then create XP by giving the XGG as Income
-    Assets:isysd:init                 1 XGG
-    Expenses:isysd:init                1 XGG
-    Income:isysd:init                  -1 XGG
-    Liabilities:isysd:init            -1 XGG
-    ; vote for own accounts
-    Assets:isysd:init:isysd          1 XP
-    Expenses:isysd:init:isysd          1 XP
-    Income:isysd:init:isysd          1 XP
-    Liabilities:isysd:init:isysd          1 XP
-    ; count votes
-    Equity:isysd:init:isysd:Assets      -1 XP
-    Equity:isysd:init:isysd:Expenses     -1 XP
-    Equity:isysd:init:isysd:Income      -1 XP
-    Equity:isysd:init:isysd:Liabilities  -1 XP
-    ; also register the founder
-    Assets:isysd:register:isysd         -0.01 XP
-    Expenses:isysd:register:isysd       -0.01 XP
-    Income:isysd:register:isysd         -0.01 XP
-    Liabilities:isysd:register:isysd    -0.01 XP
-    ; count founder registration votes
-    Equity:isysd:register:isysd:Assets      0.01 XP
-    Equity:isysd:register:isysd:Expenses     0.01 XP
-    Equity:isysd:register:isysd:Income      0.01 XP
-    Equity:isysd:register:isysd:Liabilities  0.01 XP
+
+2016/12/12 * register troll4u
+    Assets:troll4u:register:troll4u         -0.01 XP
+    Expenses:troll4u:register:troll4u       -0.01 XP
+    Income:troll4u:register:troll4u         -0.01 XP
+    Liabilities:troll4u:register:troll4u    -0.01 XP
+    Equity:troll4u:register:troll4u:Assets      0.01 XP
+    Equity:troll4u:register:troll4u:Expenses     0.01 XP
+    Equity:troll4u:register:troll4u:Income      0.01 XP
+    Equity:troll4u:register:troll4u:Liabilities  0.01 XP
